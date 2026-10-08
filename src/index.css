@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #18352b; background: #f4f7f5; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, textarea, select { font: inherit; }
+.MuiTypography-h4, .MuiTypography-h5, .MuiTypography-h6 { font-family: 'Space Grotesk', sans-serif; }
+.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: linear-gradient(135deg, #ecf6ee 0%, #dfece4 45%, #f4f7f5 100%); }
+.auth-card { width: min(100%, 480px); padding: 32px 28px; border-radius: 24px; border: 1px solid #dfeae2; box-shadow: 0 16px 42px rgba(24, 53, 43, 0.08); }
+@media (max-width: 900px) {
+	.MuiDrawer-root { display: block !important; position: fixed; inset: auto 0 0; width: 100% !important; height: 64px; z-index: 1200; }
+	.MuiDrawer-root .MuiDrawer-paper { position: absolute; inset: auto 0 0; display: block; width: 100% !important; height: 64px; min-height: 64px; overflow-x: auto; overflow-y: hidden; }
+	.MuiDrawer-root .MuiDrawer-paper > .MuiBox-root:first-child,
+	.MuiDrawer-root .MuiDrawer-paper > .MuiBox-root:last-child { display: none; }
+	.MuiDrawer-root .MuiDrawer-paper > .MuiBox-root:nth-child(2) { display: flex; align-items: center; justify-content: space-around; width: max-content; min-width: 100%; height: 64px; margin: 0; padding: 4px; }
+	.MuiDrawer-root .MuiDrawer-paper > .MuiBox-root:nth-child(2) a > .MuiBox-root { display: flex; flex-direction: column; justify-content: center; gap: 0 !important; min-width: 62px; margin: 0 !important; padding: 4px 8px !important; }
+	.MuiDrawer-root .MuiDrawer-paper > .MuiBox-root:nth-child(2) a > .MuiBox-root .MuiTypography-root { font-size: 10px; line-height: 1.2; }
+	.MuiAppBar-root .MuiToolbar-root > .MuiBox-root:first-child .MuiTypography-overline,
+	.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiTypography-root,
+	.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiBox-root:first-child { display: none; }
+	main { padding-bottom: 64px; }
+}
+@media print { .MuiDrawer-root, .MuiAppBar-root, button { display: none !important; } body { background: white; } }
